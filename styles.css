@@ -21,7 +21,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: white;
+  background-color: #f4f4f4;
 }
 
 .navbar a {
@@ -92,10 +92,10 @@ footer a:hover {
 .map {
   position: relative;
   width: 100%;
-  height: 400px; /* Adjust the height as needed */
-  margin: 0 auto; /* Center the map horizontally */
-  border-radius: 8px; /* Optional: adds rounded corners to the map */
-  overflow: hidden; /* Hides any content that may overflow */
+  height: 400px; 
+  margin: 0 auto; 
+  border-radius: 8px; 
+  overflow: hidden; 
 }
 
 .map iframe {
