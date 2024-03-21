@@ -208,6 +208,8 @@ footer a:hover {
   margin-bottom: 30px;
 }
 
+/* HOME PAGE LEARN MORE BUTTON */
+
 .learn_more {
   display: inline-block;
   background-color: #4CAF50;
@@ -222,16 +224,15 @@ footer a:hover {
   background-color: #3e8e41;
 }
 
+/* HOME PAGE SERVICES SECTION */
 
-/* HOME PAGE SERVICES */
-
-.services-section {
+.home-services-section {
   padding: 50px;
   text-align: center;
   background-color: #f8f8f8;
 }
 
-.services-section h2 {
+.home-services-section h2 {
   font-size: 32px;
   margin-bottom: 40px;
   color: #333;
@@ -239,7 +240,7 @@ footer a:hover {
   display: inline-block;
 }
 
-.services-section h2::before {
+.home-services-section h2::before {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -250,7 +251,7 @@ footer a:hover {
   background-color: #4CAF50;
 }
 
-.services-section ul {
+.home-services-section ul {
   list-style-type: none;
   padding: 0;
   display: flex;
@@ -258,7 +259,7 @@ footer a:hover {
   justify-content: center;
 }
 
-.services-section li {
+.home-services-section li {
   margin: 20px;
   padding: 30px;
   background-color: #fff;
@@ -268,19 +269,85 @@ footer a:hover {
   transition: transform 0.3s ease;
 }
 
-.services-section li:hover {
+.home-services-section li:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.services-section li h3 {
+.home-services-section li h3 {
   font-size: 20px;
   margin-bottom: 10px;
   color: #333;
 }
 
-.services-section li p {
+.home-services-section li p {
   font-size: 16px;
   color: #666;
   line-height: 1.5;
+}
+
+/* ONLINE ADVISING */
+
+.content-section {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.content-container h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.content-container h1::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #4CAF50;
+}
+
+.content-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.content-container p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
 }
