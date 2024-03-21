@@ -5,7 +5,7 @@ body {
   background-color: #f4f4f4;
 }
 
-/* FONT STYLING*/
+/* FONT */
 
 @import url("https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&display=swap");
 
@@ -21,7 +21,7 @@ body {
   font-style: normal;
 }
 
-/* NAVIGATION BAR STYLING */
+/* NAVIGATION BAR */
 
 .navbar {
   overflow: hidden;
@@ -51,8 +51,8 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: inherit; /* Inherit the font from the parent element */
-  font-size: inherit; /* Set the desired font size */
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .dropdown {
@@ -98,10 +98,11 @@ body {
   font-size: 20px;
 }
 
-/* FOOTER STYLING */
+/* FOOTER */
 
 footer {
-  background-color: #333;
+  font-weight: 500;
+  background-color: #4CAF50;
   color: #f2f2f2;
   text-align: center;
   padding: 10px;
@@ -120,46 +121,46 @@ footer a:hover {
   color: #ddd;
 }
 
-/* CONTACT STYLING */
+/* CONTACT */
 
 .contact-info {
-    text-align: center;
+  text-align: center;
 }
 
 .contact-info ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
-/* ABOUT US STYLING */
+/* ABOUT US */
 
 .whoami {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
 .whoami h1 {
-    color: #333;
-    text-align: center;
+  color: #333;
+  text-align: center;
 }
 
 .whoami p {
-    line-height: 1.6;
-    color: #666;
+  line-height: 1.6;
+  color: #666;
 }
 
-/* MAP STYLING */
+/* MAP */
 
 .map {
   position: relative;
   width: 100%;
-  height: 400px; 
-  margin: 0 auto; 
-  border-radius: 8px; 
-  overflow: hidden; 
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .map iframe {
@@ -171,3 +172,115 @@ footer a:hover {
   border: 0;
 }
 
+/* HOME PAGE */
+
+.hero-section {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.learn_more {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.learn_more:hover {
+  background-color: #3e8e41;
+}
+
+
+/* HOME PAGE SERVICES */
+
+.services-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.services-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.services-section h2::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #4CAF50;
+}
+
+.services-section ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services-section li {
+  margin: 20px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.services-section li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.services-section li h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.services-section li p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
