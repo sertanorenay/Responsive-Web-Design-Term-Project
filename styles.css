@@ -390,3 +390,90 @@ footer a:hover {
   padding: 30px;
   text-align: center;
 }
+
+/* CONTACT US FORM */
+
+.container {
+  text-align: center;
+}
+
+h1.btn#form-header {
+  display: inline-block;
+}
+h1.btn#form-header {
+  text-align: center;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-size: 24px;
+}
+
+form p {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  margin: 0px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 40px;
+  position: relative;
+  font-weight: bold;
+  font-size: medium;
+  border: none;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+#contactForm button,
+#reservationForm button,
+#commentForm button {
+  max-width: 200px;
+  align-self: center;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+    padding: 15px;
+  }
+}
