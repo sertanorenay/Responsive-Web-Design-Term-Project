@@ -1,54 +1,37 @@
+// If form clicked, hidden form will open
 $(document).ready(function () {
-  // Validate Contact Form
-  $("#contactForm").submit(function (event) {
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var message = $("#message").val();
-    if (!name || !email || !message) {
-      alert("Please fill out all fields.");
-      event.preventDefault(); // Prevent form from submitting
-    } else if (!validateEmail(email)) {
-      alert("Please enter a valid email address.");
-      event.preventDefault();
-    }
-  });
+  $(".form-container").hide();
 
-  // Validate Reservation Form
-  $("#reservationForm").submit(function (event) {
-    var fullName = $("#fullName").val();
-    var resEmail = $("#resEmail").val();
-    var date = $("#date").val();
-    if (!fullName || !resEmail || !date) {
-      alert("Please fill out all fields.");
-      event.preventDefault();
-    } else if (!validateEmail(resEmail)) {
-      alert("Please enter a valid email address.");
-      event.preventDefault();
-    }
+  $("#form-header").click(function () {
+    $(".form-container").slideToggle("slow");
   });
-
-  // Validate Comment Form
-  $("#commentForm").submit(function (event) {
-    var productId = $("#productId").val();
-    var commentText = $("#commentText").val();
-    if (!productId || !commentText) {
-      alert("Please fill out all fields.");
-      event.preventDefault();
-    }
-  });
-
-  function validateEmail(email) {
-    var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    return regex.test(email);
-  }
 });
 
-$(document).ready(function() {
-  // Initially hide the form container
-  $('.form-container').hide();
+// Checks the validity of the filled data
+$(document).ready(function () {
+  $("#contactForm").submit(function (event) {
+    var isValid = true;
 
-  // Toggle form visibility on header click
-  $('#form-header').click(function() {
-    $('.form-container').slideToggle('slow');
+    var email = $("#email").val();
+    if (!email.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
+      alert("Please enter a valid email address.");
+      isValid = false;
+    }
+
+    var name = $("#name").val();
+    if (name.length === 0) {
+      alert("Please enter your name.");
+      isValid = false;
+    }
+
+    var message = $("#message").val();
+    if (message.length === 0) {
+      alert("Please enter your message.");
+      isValid = false;
+    }
+
+    if (!isValid) {
+      event.preventDefault(); // Prevents submitting the form
+    }
   });
 });
