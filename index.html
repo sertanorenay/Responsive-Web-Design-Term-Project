@@ -1,13 +1,19 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="images/icon.png"
-    />
+    <link rel="icon" type="image/png" href="images/icon.png" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
     <title>Home</title>
   </head>
   <body>
@@ -27,11 +33,16 @@
     </div>
 
     <div class="hero-section">
-      <img src="images/background.jpg" alt="Dietitian Image" class="hero-image" />
+      <img
+        src="images/background.jpg"
+        alt="Dietitian Image"
+        class="hero-image"
+      />
       <div class="hero-content">
         <h1>Welcome to Sophia Johnson's Website</h1>
         <p>
-          Unlock the power of nutrition and achieve your health goals with expert guidance from a registered dietitian.
+          Unlock the power of nutrition and achieve your health goals with
+          expert guidance from a registered dietitian.
         </p>
         <a href="about.html" class="learn_more">Learn More</a>
       </div>
@@ -45,6 +56,12 @@
         <li>Dietary counseling for chronic conditions</li>
         <li>Corporate wellness programs</li>
       </ul>
+    </div>
+
+    <div id="dailyTip">
+      <h3>Daily Tips</h3>
+      <p id="tipContent">Here is your daily tip...</p>
+      <button class="btn" id="nextTip">Next Tip</button>
     </div>
 
     <footer>
