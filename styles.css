@@ -344,8 +344,7 @@ footer a:hover {
   padding: 12px 24px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 20px;
 }
 
 .btn:hover {
@@ -393,14 +392,13 @@ footer a:hover {
 
 /* CONTACT US FORM */
 
-.container {
+.container { /* SCHEDULE FORM DIV */
   text-align: center;
+  margin-top: 20px; 
 }
 
 h1.btn#form-header {
   display: inline-block;
-}
-h1.btn#form-header {
   text-align: center;
 }
 
@@ -426,6 +424,7 @@ form label {
 
 form p {
   text-align: center;
+  font-size: 24px;
 }
 
 input[type="text"],
@@ -434,9 +433,20 @@ input[type="date"],
 textarea {
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 8px;
   resize: none;
   margin: 0px;
+  border: 3px solid red;
+  font: inherit;
+  border: 3px solid #4CAF50;
+}
+
+input:required:invalid {
+  border: 3px solid red;
+}
+
+textarea:required:invalid {
+  border: 3px solid red;
 }
 
 label {
@@ -455,8 +465,8 @@ button[type="submit"] {
   transition: background-color 0.3s ease;
   margin-bottom: 40px;
   position: relative;
-  font-weight: bold;
-  font-size: medium;
+  font-family: "Annapurna SIL", serif;
+  font-size: 20px;
   border: none;
 }
 

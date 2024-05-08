@@ -1,4 +1,4 @@
-// If form clicked, hidden form will open
+// If form clicked, hidden form will open.
 $(document).ready(function () {
   $(".form-container").hide();
 
@@ -7,7 +7,7 @@ $(document).ready(function () {
   });
 });
 
-// Checks the validity of the filled data
+// Checks the validity of the filled data.
 $(document).ready(function () {
   $("#contactForm").submit(function (event) {
     var isValid = true;
@@ -31,7 +31,7 @@ $(document).ready(function () {
     }
 
     if (!isValid) {
-      event.preventDefault(); // Prevents submitting the form
+      event.preventDefault(); // Prevents submitting the form.
     }
   });
 });
