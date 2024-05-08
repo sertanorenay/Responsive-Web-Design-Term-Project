@@ -36,7 +36,7 @@ $(document).ready(function () {
   });
 });
 
-// Daily tip
+// Daily tips 
 $(document).ready(function() {
   var tips = [
     "Drink at least 8 glasses of water each day.",
