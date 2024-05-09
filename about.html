@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="images/icon.png" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>About Me</title>
+    <style>
+      /* CSS */
+      .hidden {
+        opacity: 0;
+      }
+    </style>
   </head>
 
   <body>
@@ -26,8 +33,8 @@
     </div>
 
     <div class="whoami">
-      <h1>About Me</h1>
-      <p>
+      <h1 class="hidden">About Me</h1>
+      <p class="hidden">
         Welcome to my website! I am Sophia Johnson, a passionate enthusiast in
         the world of cooking and photography. My journey began several years ago
         when I discovered my love for capturing culinary delights through the
@@ -36,7 +43,7 @@
         on this adventure as I share my recipes, photography tips, and stories
         behind each delicious dish.
       </p>
-      <p>
+      <p class="hidden">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
         provident? Iure quam accusamus deleniti ipsam porro, unde commodi nam
         odit dicta, laboriosam corrupti praesentium necessitatibus voluptatem
@@ -52,5 +59,14 @@
       <p>Copyright &copy; 2024 Sophia Johnson - All Rights Reserved.</p>
       <p><a href="mailto:youremail@example.com">info@example.com</a></p>
     </footer>
+
+    <script>
+      // JavaScript (jQuery)
+      $(document).ready(function() {
+        $('.hidden').each(function(index) {
+          $(this).delay(400 * index).animate({opacity: 1}, 1000);
+        });
+      });
+    </script>
   </body>
 </html>

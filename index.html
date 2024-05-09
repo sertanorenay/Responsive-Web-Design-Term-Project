@@ -15,6 +15,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <title>Home</title>
+    <style>
+      .hero-content {
+        opacity: 0;
+      }
+    </style>
   </head>
   <body>
     <div class="navbar">
@@ -68,5 +73,11 @@
       <p>Copyright &copy; 2024 Sophia Johnson - All Rights Reserved.</p>
       <p><a href="mailto:youremail@example.com">info@example.com</a></p>
     </footer>
+
+    <script>
+      $(document).ready(function() {
+        $(".hero-content").animate({ opacity: 1 }, 1500);
+      });
+    </script>
   </body>
 </html>

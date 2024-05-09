@@ -86,3 +86,10 @@ $(document).ready(function() {
       });
   });
 });
+
+
+$(document).ready(function() {
+  $(".home-services-section ul li").each(function(index) {
+    $(this).delay(200 * index).animate({ opacity: 1, left: 0 }, 1000);
+  });
+});
