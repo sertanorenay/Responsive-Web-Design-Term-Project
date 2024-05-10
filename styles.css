@@ -537,27 +537,3 @@ button[type="submit"]:hover {
 #nextTip:hover {
   background-color: #45a049;
 }
-
-.map {
-  float: left;
-  width: 50%;
-  margin-bottom: 50px;
-}
-
-.container,
-.form-container,
-.contact-info {
-  float: right;
-  width: 30%;
-  margin-bottom: 50px;
-}
-
-.navbar,
-.footer {
-  margin-bottom: 50px;
-  clear: both;
-}
-
-.contact {
-  padding: 20px;
-}
