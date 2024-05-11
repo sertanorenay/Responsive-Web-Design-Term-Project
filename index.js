@@ -123,3 +123,19 @@ $(document).ready(function () {
     }
   });
 });
+
+
+$(document).ready(function() {
+  var images = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg", "image6.jpg", "image7.jpg", "image8.jpg", "image9.jpg", "image10.jpg"];
+  var currentIndex = 0;
+  var delay = 3000;
+
+  function changeImage() {
+    $(".hero-image").attr("src", "images/" + images[currentIndex]);
+    currentIndex = (currentIndex + 1) % images.length;
+  }
+
+  changeImage();
+
+  setInterval(changeImage, delay);
+});
