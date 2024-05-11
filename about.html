@@ -1,72 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="images/icon.png" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>About Me</title>
-    <style>
-      /* CSS */
-      .hidden {
-        opacity: 0;
-      }
-    </style>
-  </head>
 
-  <body>
-    <!-- NAVIGATION BAR -->
-    <div class="navbar">
-      <img src="images/logo.png" alt="logo" class="navbar-logo" />
-      <a href="contact.html">Contact</a>
-      <a href="recipes.html">Recipes</a>
-      <div class="dropdown">
-        <button class="dropbtn">Services</button>
-        <div class="dropdown-content">
-          <a href="face_to_face_advising.html">Face to Face Advising</a>
-          <a href="online_advising.html">Online Advising</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/icon.png" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="index.js"></script>
+  <title>About Me</title>
+
+</head>
+
+<body>
+  <!-- NAVIGATION BAR -->
+  <div class="navbar">
+    <img src="images/logo.png" alt="logo" class="navbar-logo" />
+    <a href="contact.html">Contact</a>
+    <a href="recipes.html">Recipes</a>
+    <div class="dropdown">
+      <button class="dropbtn">Services</button>
+      <div class="dropdown-content">
+        <a href="face_to_face_advising.html">Face to Face Advising</a>
+        <a href="online_advising.html">Online Advising</a>
       </div>
-      <a href="about.html">About Me</a>
-      <a href="index.html">Home</a>
     </div>
+    <a href="about.html">About Me</a>
+    <a href="index.html">Home</a>
+  </div>
 
-    <div class="whoami">
-      <h1 class="hidden">About Me</h1>
-      <p class="hidden">
-        Welcome to my website! I am Sophia Johnson, a passionate enthusiast in
-        the world of cooking and photography. My journey began several years ago
-        when I discovered my love for capturing culinary delights through the
-        lens of my camera. Since then, I have honed my skills in both cooking
-        and photography, creating a harmonious blend of art and taste. Join me
-        on this adventure as I share my recipes, photography tips, and stories
-        behind each delicious dish.
-      </p>
-      <p class="hidden">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
-        provident? Iure quam accusamus deleniti ipsam porro, unde commodi nam
-        odit dicta, laboriosam corrupti praesentium necessitatibus voluptatem
-        facere, officia reprehenderit dolores? Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Neque doloremque dolor explicabo enim,
-        esse aut sint error accusantium cumque deserunt deleniti veniam beatae
-        labore sequi, necessitatibus harum quasi soluta sed.
-      </p>
-    </div>
+  <div class="whoami">
+    <h1 class="hidden">About Me</h1>
+    <p class="hidden">
+      Welcome to my website! I am Sophia Johnson, a passionate enthusiast in
+      the world of cooking and photography. My journey began several years ago
+      when I discovered my love for capturing culinary delights through the
+      lens of my camera. Since then, I have honed my skills in both cooking
+      and photography, creating a harmonious blend of art and taste. Join me
+      on this adventure as I share my recipes, photography tips, and stories
+      behind each delicious dish.
+    </p>
+    <p class="hidden">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
+      provident? Iure quam accusamus deleniti ipsam porro, unde commodi nam
+      odit dicta, laboriosam corrupti praesentium necessitatibus voluptatem
+      facere, officia reprehenderit dolores? Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Neque doloremque dolor explicabo enim,
+      esse aut sint error accusantium cumque deserunt deleniti veniam beatae
+      labore sequi, necessitatibus harum quasi soluta sed.
+    </p>
+  </div>
 
-    <!-- FOOTER SECTION -->
-    <footer>
-      <p>Copyright &copy; 2024 Sophia Johnson - All Rights Reserved.</p>
-      <p><a href="mailto:youremail@example.com">info@example.com</a></p>
-    </footer>
+  <!-- FOOTER SECTION -->
+  <footer>
+    <p>Copyright &copy; 2024 Sophia Johnson - All Rights Reserved.</p>
+    <p><a href="mailto:youremail@example.com">info@example.com</a></p>
+  </footer>
 
-    <script>
-      // JavaScript (jQuery)
-      $(document).ready(function() {
-        $('.hidden').each(function(index) {
-          $(this).delay(400 * index).animate({opacity: 1}, 1000);
-        });
-      });
-    </script>
-  </body>
+</body>
+
 </html>

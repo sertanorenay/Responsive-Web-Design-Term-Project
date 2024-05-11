@@ -537,3 +537,11 @@ button[type="submit"]:hover {
 #nextTip:hover {
   background-color: #45a049;
 }
+
+.hidden {
+  opacity: 0;
+}
+
+.hero-content {
+  opacity: 0;
+}

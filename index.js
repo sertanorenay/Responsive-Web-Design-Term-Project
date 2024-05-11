@@ -93,3 +93,33 @@ $(document).ready(function() {
     $(this).delay(200 * index).animate({ opacity: 1, left: 0 }, 1000);
   });
 });
+
+$(document).ready(function() {
+  $('.hidden').each(function(index) {
+    $(this).delay(400 * index).animate({opacity: 1}, 1000);
+  });
+});
+
+$(document).ready(function() {
+  $(".hero-content").animate({ opacity: 1 }, 1500);
+});
+
+$(document).ready(function () {
+  $(".add-comment").click(function () {
+    var commentText = $(this).siblings(".new-comment").val();
+    var commenterName = "Anonymous"; // Varsayılan olarak "Anonymous" ismini kullan
+    if (commentText.trim() !== "") {
+      // Kullanıcının ismini aldığımız input alanı varsa onu kullan
+      var $commenterNameInput = $(this).siblings(".commenter-name");
+      if ($commenterNameInput.length && $commenterNameInput.val().trim() !== "") {
+        commenterName = $commenterNameInput.val();
+      }
+      // Yorumu oluştur ve ekle
+      var commentHTML = "<div class='comment'><strong>" + commenterName + ":</strong> " + commentText + "</div>";
+      $(this).siblings(".comment-section").append(commentHTML);
+      // Yorum ve isim inputlarını temizle
+      $(this).siblings(".new-comment").val("");
+      $commenterNameInput.val("");
+    }
+  });
+});
