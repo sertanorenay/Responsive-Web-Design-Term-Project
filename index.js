@@ -36,7 +36,7 @@ $(document).ready(function () {
   });
 });
 
-// Daily tips 
+// Daily random tips 
 $(document).ready(function() {
   var tips = [
     "Drink at least 8 glasses of water each day.",
@@ -87,7 +87,7 @@ $(document).ready(function() {
   });
 });
 
-
+// Animation rules
 $(document).ready(function() {
   $(".home-services-section ul li").each(function(index) {
     $(this).delay(200 * index).animate({ opacity: 1, left: 0 }, 1000);
@@ -104,37 +104,34 @@ $(document).ready(function() {
   $(".hero-content").animate({ opacity: 1 }, 1500);
 });
 
+// Commentization on recipes page.
 $(document).ready(function () {
   $(".add-comment").click(function () {
     var commentText = $(this).siblings(".new-comment").val();
-    var commenterName = "Anonymous"; // Varsayılan olarak "Anonymous" ismini kullan
+    var commenterName = "Anonymous";
     if (commentText.trim() !== "") {
-      // Kullanıcının ismini aldığımız input alanı varsa onu kullan
       var $commenterNameInput = $(this).siblings(".commenter-name");
       if ($commenterNameInput.length && $commenterNameInput.val().trim() !== "") {
         commenterName = $commenterNameInput.val();
       }
-      // Yorumu oluştur ve ekle
+
       var commentHTML = "<div class='comment'><strong>" + commenterName + ":</strong> " + commentText + "</div>";
       $(this).siblings(".comment-section").append(commentHTML);
-      // Yorum ve isim inputlarını temizle
       $(this).siblings(".new-comment").val("");
       $commenterNameInput.val("");
     }
   });
 });
 
-// BxSlider plugin in home page to slideshıow the background images
+// BxSlider plugin in home page to slideshıow the background images.
 $(document).ready(function() {
-  // Initialize the bxSlider
   $('.bxslider').bxSlider({
     auto: true,
-    pause: 5000, // Pause for 5 seconds before switching slides
-    mode: 'fade', // Use the fade effect for slide transitions
-    pager: false, // Hide the default pager
-    controls: false // Hide the default controls
+    pause: 5000,
+    mode: 'fade',
+    pager: false,
+    controls: false
   });
 
-  // Fade in the hero content
   $(".hero-content").animate({ opacity: 1 }, 1500);
 });

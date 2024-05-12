@@ -132,6 +132,11 @@ footer a:hover {
   padding: 0;
 }
 
+#insta-logo {
+  height: 16px; 
+  vertical-align: "middle"; 
+}
+
 /* ABOUT US */
 
 .whoami {
@@ -546,8 +551,8 @@ button[type="submit"]:hover {
 }
 
 /* BXSLIDER STYLING */
-/* Changes the border color of the outer wrapper */
-.bx-wrapper {
-  border-color: #f4f4f4 !important; /* Red border */
+.bx-wrapper { 
+  border-color: #f4f4f4 !important;
   box-shadow: none !important;
+  border: 0px !important;
 }
