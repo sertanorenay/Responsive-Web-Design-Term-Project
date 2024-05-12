@@ -9,6 +9,20 @@ $(document).ready(function () {
 
 // Checks the validity of the filled data.
 $(document).ready(function () {
+  $("#dialog").dialog({
+    autoOpen: false,
+    modal: true,
+    buttons: {
+      Ok: function () {
+        $(this).dialog("close");
+      },
+    },
+  });
+
+  $("#info-btn").click(function() {
+    $("#dialog").dialog("open");
+  });
+
   $("#contactForm").submit(function (event) {
     var isValid = true;
 
@@ -36,8 +50,8 @@ $(document).ready(function () {
   });
 });
 
-// Daily random tips 
-$(document).ready(function() {
+// Daily random tips
+$(document).ready(function () {
   var tips = [
     "Drink at least 8 glasses of water each day.",
     "Incorporate two fruits or vegetables in every meal.",
@@ -73,36 +87,42 @@ $(document).ready(function() {
     "Swap soda for sparkling water with a splash of fruit juice for a refreshing drink.",
     "Cook meals at home more often to better control what you eat.",
     "Opt for air-popped popcorn instead of oil-popped as a low-calorie snack.",
-    "Choose fish high in omega-3 fatty acids, like salmon or mackerel, for heart health."
-];
+    "Choose fish high in omega-3 fatty acids, like salmon or mackerel, for heart health.",
+  ];
 
   var currentTipIndex = Math.floor(Math.random() * tips.length);
-  $('#tipContent').text(tips[currentTipIndex]);
+  $("#tipContent").text(tips[currentTipIndex]);
 
-  $('#nextTip').click(function() {
-      currentTipIndex = (currentTipIndex + 1) % tips.length;
-      $('#tipContent').fadeOut(function() {
-          $(this).text(tips[currentTipIndex]).fadeIn();
-      });
+  $("#nextTip").click(function () {
+    currentTipIndex = (currentTipIndex + 1) % tips.length;
+    $("#tipContent").fadeOut(function () {
+      $(this).text(tips[currentTipIndex]).fadeIn();
+    });
   });
 });
 
 // Animation rules
-$(document).ready(function() {
-  $(".home-services-section ul li").each(function(index) {
-    $(this).delay(200 * index).animate({ opacity: 1, left: 0 }, 1000);
+/* 
+$(document).ready(function () {
+  $(".home-services-section ul li").each(function (index) {
+    $(this)
+      .delay(200 * index)
+      .animate({ opacity: 1, left: 0 }, 1000);
   });
 });
 
-$(document).ready(function() {
-  $('.hidden').each(function(index) {
-    $(this).delay(400 * index).animate({opacity: 1}, 1000);
+$(document).ready(function () {
+  $(".hidden").each(function (index) {
+    $(this)
+      .delay(400 * index)
+      .animate({ opacity: 1 }, 1000);
   });
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   $(".hero-content").animate({ opacity: 1 }, 1500);
 });
+*/
 
 // Commentization on recipes page.
 $(document).ready(function () {
@@ -111,11 +131,19 @@ $(document).ready(function () {
     var commenterName = "Anonymous";
     if (commentText.trim() !== "") {
       var $commenterNameInput = $(this).siblings(".commenter-name");
-      if ($commenterNameInput.length && $commenterNameInput.val().trim() !== "") {
+      if (
+        $commenterNameInput.length &&
+        $commenterNameInput.val().trim() !== ""
+      ) {
         commenterName = $commenterNameInput.val();
       }
 
-      var commentHTML = "<div class='comment'><strong>" + commenterName + ":</strong> " + commentText + "</div>";
+      var commentHTML =
+        "<div class='comment'><strong>" +
+        commenterName +
+        ":</strong> " +
+        commentText +
+        "</div>";
       $(this).siblings(".comment-section").append(commentHTML);
       $(this).siblings(".new-comment").val("");
       $commenterNameInput.val("");
@@ -123,14 +151,14 @@ $(document).ready(function () {
   });
 });
 
-// BxSlider plugin in home page to slideshıow the background images.
-$(document).ready(function() {
-  $('.bxslider').bxSlider({
+// BxSlider plugin in home page to slideshow the background images.
+$(document).ready(function () {
+  $(".bxslider").bxSlider({
     auto: true,
     pause: 5000,
-    mode: 'fade',
+    mode: "fade",
     pager: false,
-    controls: false
+    controls: false,
   });
 
   $(".hero-content").animate({ opacity: 1 }, 1500);

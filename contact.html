@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="images/icon.png" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
-    />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="tools/jquery-ui-1.12.1.custom/jquery-ui.min.css" />
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="tools/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <link href="tools/jquery.bxslider.css" rel="stylesheet">
+    <script src="tools/bxslider.js"></script>
     <script src="index.js"></script>
     <title>Contact</title>
   </head>
@@ -59,11 +56,20 @@
             minlength="1"
           ></textarea>
           <button type="submit">Submit</button>
-          <p>I will return your message by e-mail as soon as possible.</p>
         </form>
       </div>
 
+      <div class="container">
+        <button class="btn" id="info-btn">Information</button>
+      </div>
+      <div class="container" id="dialog" title="" style="display: none">
+        <p>
+          I will return your message by e-mail as soon as possible.
+        </p>
+      </div>
+
       <div class="contact-info">
+        <br>
         <p>
           If you have any questions or inquiries, feel free to reach out to us
           using the contact information below:

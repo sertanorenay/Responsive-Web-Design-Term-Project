@@ -402,7 +402,6 @@ footer a:hover {
 /* CONTACT US FORM */
 
 .container {
-  /* SCHEDULE FORM DIV */
   text-align: center;
   margin-top: 20px;
 }
@@ -484,6 +483,13 @@ button[type="submit"]:hover {
   background-color: #3e8e41;
 }
 
+.btn#info-btn {
+  border: 0px;
+  text-align: center;
+  font-weight: bold;
+  font: inherit;
+}
+
 #contactForm button,
 #reservationForm button,
 #commentForm button {
@@ -491,7 +497,6 @@ button[type="submit"]:hover {
   align-self: center;
 }
 
-/* DAILY TIPS ON INDEX.HTML */
 #dailyTip {
   position: relative;
   padding: 20px;
@@ -499,11 +504,8 @@ button[type="submit"]:hover {
   text-align: center;
   font-style: italic;
   background-image: url("images//flowers.png");
-  /* Specify the path to your image */
   background-repeat: repeat;
-  /* Makes the background image repeat */
   overflow: hidden;
-  /* Ensures no overflow outside the div boundaries */
   margin-bottom: 20px;
   font-size: 32px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
