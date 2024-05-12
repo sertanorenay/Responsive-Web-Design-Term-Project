@@ -102,7 +102,7 @@ body {
 
 footer {
   font-weight: 500;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: #f2f2f2;
   text-align: center;
   padding: 10px;
@@ -176,7 +176,7 @@ footer a:hover {
 
 .hero-section {
   position: relative;
-  height:700px;
+  height: 600px;
   overflow: hidden;
 }
 
@@ -196,6 +196,7 @@ footer a:hover {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
   border-radius: 5px;
+  z-index: 100; /* CHECK CHECK */
 }
 
 .hero-content h1 {
@@ -212,7 +213,7 @@ footer a:hover {
 
 .learn_more {
   display: inline-block;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
@@ -248,7 +249,7 @@ footer a:hover {
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 .home-services-section ul {
@@ -319,7 +320,7 @@ footer a:hover {
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 .content-image {
@@ -338,7 +339,7 @@ footer a:hover {
 
 .btn {
   display: inline-block;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: #fff;
   text-decoration: none;
   padding: 12px 24px;
@@ -440,7 +441,7 @@ textarea {
   margin: 0px;
   border: 3px solid red;
   font: inherit;
-  border: 3px solid #4CAF50;
+  border: 3px solid #4caf50;
 }
 
 input:required:invalid {
@@ -458,7 +459,7 @@ label {
 }
 
 button[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   display: inline-block;
   color: #fff;
   text-decoration: none;
@@ -490,7 +491,7 @@ button[type="submit"]:hover {
   border-radius: 5px;
   text-align: center;
   font-style: italic;
-  background-image: url('images//flowers.png');
+  background-image: url("images//flowers.png");
   /* Specify the path to your image */
   background-repeat: repeat;
   /* Makes the background image repeat */
@@ -502,18 +503,18 @@ button[type="submit"]:hover {
 }
 
 #dailyTip::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.70);
-  /* %30 opacity */
+  background: rgba(255, 255, 255, 0.7);
+  /* 0.70 -> %30 opacity */
   pointer-events: none;
 }
 
-#dailyTip>* {
+#dailyTip > * {
   position: relative;
   z-index: 1;
 }
@@ -527,7 +528,7 @@ button[type="submit"]:hover {
 #nextTip {
   margin-top: 10px;
   padding: 5px 10px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 4px;
@@ -542,6 +543,4 @@ button[type="submit"]:hover {
   opacity: 0;
 }
 
-.hero-content {
-  opacity: 0;
-}
+/* BXSLIDER STYLING */

@@ -1,68 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="index.js"></script>
+    <title>Home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="images/icon.png" />
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="index.js"></script>
-  <title>Home</title>
-</head>
+  <body>
+    <div class="navbar">
+      <img src="images/logo.png" alt="logo" class="navbar-logo" />
+      <a href="contact.html">Contact</a>
+      <a href="recipes.html">Recipes</a>
+      <div class="dropdown">
+        <button class="dropbtn">Services</button>
+        <div class="dropdown-content">
+          <a href="face_to_face_advising.html">Face to Face Advising</a>
+          <a href="online_advising.html">Online Advising</a>
+        </div>
+      </div>
+      <a href="about.html">About Me</a>
+      <a href="index.html">Home</a>
+    </div>
 
-<body>
-  <div class="navbar">
-    <img src="images/logo.png" alt="logo" class="navbar-logo" />
-    <a href="contact.html">Contact</a>
-    <a href="recipes.html">Recipes</a>
-    <div class="dropdown">
-      <button class="dropbtn">Services</button>
-      <div class="dropdown-content">
-        <a href="face_to_face_advising.html">Face to Face Advising</a>
-        <a href="online_advising.html">Online Advising</a>
+    <div class="hero-section">
+      <ul class="bxslider">
+        <li>
+          <img src="images/background1.jpg" alt="Background 1" class="hero-image" />
+        </li>
+        <li>
+          <img src="images/background2.jpg" alt="Background 2" class="hero-image" />
+        </li>
+        <li>
+          <img src="images/background3.jpg" alt="Background 2" class="hero-image" />
+        </li>
+      </ul>
+
+      <div class="hero-content">
+        <h1>Welcome to Sophia Johnson's Website</h1>
+        <p>
+          Unlock the power of nutrition and achieve your health goals with
+          expert guidance from a registered dietitian.
+        </p>
+        <a href="about.html" class="learn_more">Learn More</a>
       </div>
     </div>
-    <a href="about.html">About Me</a>
-    <a href="index.html">Home</a>
-  </div>
 
-  <div class="hero-section">
-    <img src="images/image1.jpg" alt="Dietitian Image" class="hero-image" />
-    <div class="hero-content">
-      <h1>Welcome to Sophia Johnson's Website</h1>
-      <p>
-        Unlock the power of nutrition and achieve your health goals with
-        expert guidance from a registered dietitian.
-      </p>
-      <a href="about.html" class="learn_more">Learn More</a>
+    <div class="home-services-section">
+      <h2>Transform Your Health with Us</h2>
+      <ul>
+        <li>Personalized nutrition plans</li>
+        <li>Weight management programs</li>
+        <li>Dietary counseling for chronic conditions</li>
+        <li>Corporate wellness programs</li>
+      </ul>
     </div>
-  </div>
 
-  <div class="home-services-section">
-    <h2>Transform Your Health with Us</h2>
-    <ul>
-      <li>Personalized nutrition plans</li>
-      <li>Weight management programs</li>
-      <li>Dietary counseling for chronic conditions</li>
-      <li>Corporate wellness programs</li>
-    </ul>
-  </div>
+    <div id="dailyTip">
+      <h3>Healthy Tips</h3>
+      <p id="tipContent">Here is your daily tip...</p>
+      <button class="btn" id="nextTip">Next Tip</button>
+    </div>
 
-  <div id="dailyTip">
-    <h3>Healthy Tips</h3>
-    <p id="tipContent">Here is your daily tip...</p>
-    <button class="btn" id="nextTip">Next Tip</button>
-  </div>
-
-  <footer>
-    <p>Copyright &copy; 2024 Sophia Johnson - All Rights Reserved.</p>
-    <p><a href="mailto:youremail@example.com">info@example.com</a></p>
-  </footer>
-</body>
-
+    <footer>
+      <p>Copyright &copy; 2024 Sophia Johnson - All Rights Reserved.</p>
+      <p><a href="mailto:youremail@example.com">info@example.com</a></p>
+    </footer>
+  </body>
 </html>
