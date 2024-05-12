@@ -102,8 +102,7 @@ $(document).ready(function () {
 });
 
 // Animation rules
-/* 
-$(document).ready(function () {
+ $(document).ready(function () {
   $(".home-services-section ul li").each(function (index) {
     $(this)
       .delay(200 * index)
@@ -122,7 +121,6 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".hero-content").animate({ opacity: 1 }, 1500);
 });
-*/
 
 // Commentization on recipes page.
 $(document).ready(function () {
@@ -162,4 +160,19 @@ $(document).ready(function () {
   });
 
   $(".hero-content").animate({ opacity: 1 }, 1500);
+});
+
+// Datepicker that shows the available days on the calendar
+$(document).ready(function() {
+  $('#date').datepicker({
+      beforeShowDay: function(date) {
+          var day = date.getDay();
+          var dateString = $.datepicker.formatDate('mm/dd/yy', date);
+          
+          if (day === 0 || day === 6) {
+              return [false, "", "Weekends are not available"];
+          }      
+          return [true, "", "Available"];
+      }
+  });
 });
