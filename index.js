@@ -125,13 +125,16 @@ $(document).ready(function () {
 });
 
 // BxSlider plugin in home page to slideshıow the background images
-$(document).ready(function(){
+$(document).ready(function() {
+  // Initialize the bxSlider
   $('.bxslider').bxSlider({
-    mode: 'fade',
     auto: true,
-    pager: false,
-    controls: true,
-    pause: 3000,
-    speed: 500
+    pause: 5000, // Pause for 5 seconds before switching slides
+    mode: 'fade', // Use the fade effect for slide transitions
+    pager: false, // Hide the default pager
+    controls: false // Hide the default controls
   });
+
+  // Fade in the hero content
+  $(".hero-content").animate({ opacity: 1 }, 1500);
 });
