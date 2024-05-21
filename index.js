@@ -177,7 +177,7 @@ $(document).ready(function() {
   });
 });
 
-// AJAX FEATURES
+// AJAX FEATURE 1 - Reading recipes texts from .json
 $(document).ready(function () {
   $.ajax({
     url: 'data/recipes.json',
@@ -209,4 +209,53 @@ $(document).ready(function () {
   });
 });
 
+// AJAX FEATURE 2 - Get food data from National Agricultural Library
+document.addEventListener('DOMContentLoaded', function() {
+  const apiKey = 'TZvveaZk2AOJxYTJeIRf1vIiL6XxGUPsqBQpUnbX'; // our API Key
+  const apiUrl = 'https://api.nal.usda.gov/fdc/v1/foods/search';
 
+  function fetchNutritionalInfo(food) {
+      $.ajax({
+          url: apiUrl,
+          method: 'GET',
+          data: {
+              query: food,
+              pageSize: 1,
+              api_key: apiKey
+          },
+          success: function(response) {
+              if (response.foods && response.foods.length > 0) {
+                  const foodData = response.foods[0];
+                  const nutrients = foodData.foodNutrients;
+                  $('#nutrition-info').html(`
+                      <h2>${foodData.description}</h2>
+                      <p>Calories: ${getNutrientValue(nutrients, 1008)} kcal</p>
+                      <p>Proteins: ${getNutrientValue(nutrients, 1003)} g</p>
+                      <p>Fat: ${getNutrientValue(nutrients, 1004)} g</p>
+                      <p>Carbohydrates: ${getNutrientValue(nutrients, 1005)} g</p>
+                  `);
+              } else {
+                  $('#nutrition-info').html('<p>No results found</p>');
+              }
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+              console.error('Error fetching data:', textStatus, errorThrown);
+              $('#nutrition-info').html('<p>Error fetching data</p>');
+          }
+      });
+  }
+
+  function getNutrientValue(nutrients, nutrientId) {
+      const nutrient = nutrients.find(n => n.nutrientId === nutrientId);
+      return nutrient ? nutrient.value : 'N/A';
+  }
+
+  $('#search-button').on('click', function() {
+      const food = $('#food-input').val();
+      if (food) {
+          fetchNutritionalInfo(food);
+      } else {
+          $('#nutrition-info').html('<p>Please enter a food name</p>');
+      }
+  });
+});
