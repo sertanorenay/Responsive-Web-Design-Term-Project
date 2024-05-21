@@ -1,0 +1,20 @@
+[
+    {
+        "image": "images/recipe_1.jpg",
+        "title": "Tuna Salad",
+        "ingredients": "5-6 leaves of lettuce, 2-3 sprigs of parsley, 4 cherry tomatoes, 1 can of small sized tuna, 2 tablespoons of canned corn, 1 tablespoon olive oil, Half lemon juice, Salt",
+        "instructions": "Wash and chop lettuce, parsley and tomato well. Put the chopped ingredients into a suitable bowl. Drained tuna and corns are added. You can buy canned corns from the market or you can boil them yourself at home. Olive oil, salt and lemon are added. All ingredients are mixed well and served. Bon Appetit."
+    },
+    {
+        "image": "images/recipe_2.jpg",
+        "title": "Oatmeal Diet Cookies",
+        "ingredients": "1 cup oatmeal, 1 banana, 1 egg white, Half tea glass walnut, Half tea glass raisins, 4 dates, 1 dried fig, 1 teaspoon baking powder",
+        "instructions": "After whisking the egg white a little and making it thicken, we put 1 medium-sized banana into it and crush it. Then we add oats and other ingredients. I did not write the amount of walnuts or anything else, it is completely up to you, I used very little. When all the ingredients are mixed and reach the consistency that we can shape without sticking to our hands, we put it on greaseproof paper and bake it in a preheated 180 degree oven. If the mixture sticks to our hands, you can add a little more oats, bon appetit."
+    },
+    {
+        "image": "images/recipe_3.jpg",
+        "title": "Zucchini Sandal with Cheese",
+        "ingredients": "4 medium-sized courgettes, 2 eggs, 200 gr white cheese, Parsley, Black pepper, chilli flakes",
+        "instructions": "Scrape the outside of 4 courgettes, divide them into 2 lengthwise and boil them in water with the addition of salt. While boiling, we should be careful that they do not fall apart. After cooling down a little bit, remove the seeds in the centre of the zucchini with a spoon and put them in a strainer and wait for the water to drain well. Mash the cheese in a bowl, add 2 eggs, chopped parsley, black pepper and chilli flakes and mix them with a fork. Fill into the courgettes. Place in the grill function of the oven at 220 degrees until the top turns golden brown. It can be served hot or cold. Enjoy your meal."
+    }
+]

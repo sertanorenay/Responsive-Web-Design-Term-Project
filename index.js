@@ -176,3 +176,37 @@ $(document).ready(function() {
       }
   });
 });
+
+// AJAX FEATURES
+$(document).ready(function () {
+  $.ajax({
+    url: 'data/recipes.json',
+    dataType: 'json',
+    success: function (data) {
+      var recipesContent = $('.recipe-details');
+      recipesContent.empty();
+      $.each(data, function (index, recipe) {
+        var recipeHtml = `
+          <div class="recipe">
+            <img src="${recipe.image}" alt="${recipe.title}" class="recipe-image" />
+            <h2>${recipe.title}</h2>
+            <p><strong>Ingredients:</strong> ${recipe.ingredients}</p>
+            <p><strong>Instructions:</strong> ${recipe.instructions}</p>
+            <div class="comments">
+              <h3>Comments</h3>
+              <div class="comment-section"></div>
+              <input type="text" class="commenter-name" placeholder="Your Name">
+              <textarea class="new-comment" placeholder="Add a comment..."></textarea>
+              <button class="add-comment">Add Comment</button>
+            </div>
+          </div>`;
+        recipesContent.append(recipeHtml);
+      });
+    },
+    error: function () {
+      alert('Failed to load recipes.');
+    }
+  });
+});
+
+
