@@ -384,6 +384,8 @@ footer a:hover {
 
 .recipe-details {
   flex: 1;
+  border-color: #45a049;
+  border: #45a049;
 }
 
 .recipe h2 {
@@ -563,7 +565,7 @@ button[type="submit"]:hover {
   border: 0px !important;
 }
 
-/* Container of the Datepicker */
+/* CONTAINER OF DATEPICKER */
 .ui-datepicker {
   width: 100%;
   padding: 10px;
@@ -580,4 +582,21 @@ button[type="submit"]:hover {
   padding: 5px 0;
   font-size: 12px;
   font-weight: bold;
+}
+
+/* FOOD INFO SESSION IN INDEX.HTML */
+.food-info {
+  text-align: center;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.food-info h2 {
+  font-size: 32px;
+}
+
+.food-info h4 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 24px;
 }
