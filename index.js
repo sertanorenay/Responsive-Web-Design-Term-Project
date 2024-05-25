@@ -211,7 +211,7 @@ $(document).ready(function () {
 
 // AJAX FEATURE 2 - Get food data from National Agricultural Library
 document.addEventListener('DOMContentLoaded', function() {
-  const apiKey = 'TZvveaZk2AOJxYTJeIRf1vIiL6XxGUPsqBQpUnbX'; // our API Key
+  const apiKey = 'TZvveaZk2AOJxYTJeIRf1vIiL6XxGUPsqBQpUnbX';
   const apiUrl = 'https://api.nal.usda.gov/fdc/v1/foods/search';
 
   function fetchNutritionalInfo(food) {

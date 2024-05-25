@@ -279,7 +279,7 @@ footer a:hover {
 
 .home-services-section li:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px #45a049;
 }
 
 .home-services-section li h3 {
@@ -509,7 +509,7 @@ button[type="submit"]:hover {
   border-radius: 5px;
   text-align: center;
   font-style: italic;
-  background-image: url("images//flowers.png");
+  background-image: url("images/flowers.png");
   background-repeat: repeat;
   overflow: hidden;
   margin-bottom: 20px;
@@ -599,4 +599,40 @@ button[type="submit"]:hover {
   font-style: italic;
   font-weight: normal;
   font-size: 24px;
+}
+
+.label {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.label::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #4caf50;
+}
+
+input[type=text]#food-input {
+  width: 260px;
+}
+
+button#search-button.btn {
+  border: none;
+}
+
+/* UNSELECTABLE LIST ITEMS IN INDEX.HTML */
+.unselectable-list {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.unselectable-list:focus {
+  outline: none;
 }

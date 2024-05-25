@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="images/icon.png" />
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="index.js"></script>
-  <title>Recipes</title>
-</head>
-<body>
-  <div class="navbar">
-    <img src="images/logo.png" alt="logo" class="navbar-logo" />
-    <a href="contact.html">Contact</a>
-    <a href="recipes.html">Recipes</a>
-    <div class="dropdown">
-      <button class="dropbtn">Services</button>
-      <div class="dropdown-content">
-        <a href="face_to_face_advising.html">Face to Face Advising</a>
-        <a href="online_advising.html">Online Advising</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="tools/bxslider.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+    <title>Recipes</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="images/logo.png" alt="logo" class="navbar-logo" />
+      <a href="contact.html">Contact</a>
+      <a href="recipes.html">Recipes</a>
+      <div class="dropdown">
+        <button class="dropbtn">Services</button>
+        <div class="dropdown-content">
+          <a href="face_to_face_advising.html">Face to Face Advising</a>
+          <a href="online_advising.html">Online Advising</a>
+        </div>
+      </div>
+      <a href="about.html">About Me</a>
+      <a href="index.html">Home</a>
+    </div>
+
+    <div class="recipes-content">
+      <h1>Recipes</h1>
+      <div class="recipe-details">
+        <!-- Recipes will be loaded here by AJAX -->
       </div>
     </div>
-    <a href="about.html">About Me</a>
-    <a href="index.html">Home</a>
-  </div>
 
-  <div class="recipes-content">
-    <h1>Recipes</h1>
-    <div class="recipe-details">
-      <!-- Recipes will be loaded here by AJAX -->
-    </div>
-  </div>
-
-  <footer class="footer">
-    <p>Copyright &copy; 2024 Sophia Jhonson - All Rights Reserved.</p>
-    <p><a href="mailto:youremail@example.com">sophiajhonson@icloud.com</a></p>
-  </footer>
-</body>
+    <footer class="footer">
+      <p>Copyright &copy; 2024 Sophia Jhonson - All Rights Reserved.</p>
+      <p><a href="mailto:youremail@example.com">sophiajhonson@icloud.com</a></p>
+    </footer>
+  </body>
 </html>
