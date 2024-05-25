@@ -1,51 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="images/icon.png" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="index.js"></script>
-    <title>About Me</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/icon.png" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+  />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+  />
+  <link rel="stylesheet" href="tools/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+  <script src="index.js" defer></script>
+  <title>About Me</title>    
+</head>
 
-  <body>
-    <!-- NAVIGATION BAR -->
-    <div class="navbar">
-      <img src="images/logo.png" alt="logo" class="navbar-logo" />
-      <a href="contact.html">Contact</a>
-      <a href="recipes.html">Recipes</a>
-      <div class="dropdown">
-        <button class="dropbtn">Services</button>
-        <div class="dropdown-content">
-          <a href="face_to_face_advising.html">Face to Face Advising</a>
-          <a href="online_advising.html">Online Advising</a>
-        </div>
+<body>
+  <!-- NAVIGATION BAR -->
+  <div class="navbar">
+    <img src="images/logo.png" alt="logo" class="navbar-logo" />
+    <a href="contact.html">Contact</a>
+    <a href="recipes.html">Recipes</a>
+    <div class="dropdown">
+      <button class="dropbtn">Services</button>
+      <div class="dropdown-content">
+        <a href="face_to_face_advising.html">Face to Face Advising</a>
+        <a href="online_advising.html">Online Advising</a>
       </div>
-      <a href="about.html">About Me</a>
-      <a href="index.html">Home</a>
     </div>
+    <a href="about.html">About Me</a>
+    <a href="index.html">Home</a>
+  </div>
 
-    <div class="content-container">
-      <h1 class="hidden">About Me</h1>
-      <p class="hidden">
-        Welcome to my website! I am Sophia Johnson, a dedicated dietitian with 
-        a deep passion for nutrition and culinary arts. With extensive expertise
-        in both fields, I aim to inspire and guide you on your journey to a healthier
-        lifestyle. Join me as I share nutritious recipes, practical health tips, and 
-        the stories that make each dish special. Let's embark on this flavorful adventure together!
-      </p>
+  <div class="content-container">
+    <h1 class="hidden">About Me</h1>
+    <p class="hidden">
+      Welcome to my website! I am Sophia Johnson, a dedicated dietitian with 
+      a deep passion for nutrition and culinary arts. With extensive expertise
+      in both fields, I aim to inspire and guide you on your journey to a healthier
+      lifestyle. Join me as I share nutritious recipes, practical health tips, and 
+      the stories that make each dish special. Let's embark on this flavorful adventure together!
+    </p>
+  </div></br>
+
+  <div class="content-container hidden">
+    <div id="accordion">
+      <h3>My Background</h3>
+      <div>
+        <p class="accordion-p">
+          I have a diverse background encompassing various roles in nutrition, health,
+          and wellness. With a foundation in dietetics and a passion for culinary arts,
+          I have dedicated my career to helping others achieve their health goals 
+          through personalized nutrition plans and innovative culinary techniques.
+        </p>
+      </div>
+      <h3>My Education</h3>
+      <div>
+        <p class="accordion-p">
+          I hold a Bachelor's degree in Nutrition and Dietetics from the University 
+          of Health Sciences, where I graduated with honors. Additionally, I have 
+          completed numerous certifications in advanced nutrition, culinary arts, and public health.
+        </p>
+      </div>
+      <h3>My Experience</h3>
+      <div>
+        <p class="accordion-p">
+          Over the years, I have gained extensive experience working in various 
+          settings, including hospitals, wellness centers, and private practice.
+          I have successfully guided clients through weight management, chronic 
+          disease management, and overall wellness strategies.
+        </p>
+      </div>
+      <h3>My Hobbies</h3>
+      <div>
+        <p class="accordion-p">
+          In my free time, I enjoy experimenting with new recipes, exploring different
+          cuisines, and staying active through hiking and yoga. I also love writing
+          about nutrition and sharing my knowledge through workshops and seminars.
+        </p>
+      </div>
+      <h3>My Philosophy</h3>
+      <div>
+        <p class="accordion-p">
+          I believe in a holistic approach to health that considers the physical, emotional, 
+          and social aspects of well-being. My goal is to empower individuals to make informed 
+          choices about their nutrition and lifestyle.
+        </p>
+      </div>
+      <h3>Community Involvement</h3>
+      <div>
+        <p class="accordion-p">
+          I am actively involved in community health initiatives, providing nutrition education
+          and support to underserved populations. I volunteer with local organizations to promote
+          healthy eating habits and improve access to nutritious foods.
+        </p>
+      </div>
+      <h3>Future Goals</h3>
+      <div>
+        <p class="accordion-p">
+          My future goals include continuing to expand my knowledge and expertise in the field of
+          nutrition, developing new and innovative wellness programs, and reaching a broader 
+          audience through digital platforms and social media.
+        </p>
+      </div>
     </div>
-
-    <div>
-      <br>
-    </div>
-
-    <!-- FOOTER SECTION -->
-    <footer>
-      <p>Copyright &copy; 2024 Sophia Johnson - All Rights Reserved.</p>
-      <p><a href="mailto:youremail@example.com">sophiajhonson@icloud.com</a></p>
-    </footer>
-  </body>
+  </div></br>
+   
+  <!-- FOOTER SECTION -->
+  <footer>
+    <p>Copyright &copy; 2024 Sophia Johnson - All Rights Reserved.</p>
+    <p><a href="mailto:youremail@example.com">sophiajhonson@icloud.com</a></p>
+  </footer>
+</body>
 </html>

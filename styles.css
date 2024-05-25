@@ -645,3 +645,34 @@ button.btn.add-comment {
 input.commenter-name {
   margin-bottom: 8px;
 }
+
+/* ACCORDION Q&A IN ABOUT.HTML */
+#accordion {
+  width: 80%;
+  margin: 20px auto;
+  border: none;
+}
+#accordion h3 {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-family: "Annapurna SIL", serif;
+}
+
+#accordion div {
+  padding: 10px;
+  border: 1px solid #4caf50;
+  border-top: none;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-bottom: 20px; /* Increased spacing between boxes */
+}
+
+.accordion-p {
+  font-family: "Annapurna SIL", serif;
+}

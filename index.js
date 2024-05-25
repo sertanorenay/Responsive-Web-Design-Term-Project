@@ -144,6 +144,10 @@ $('.add-comment').click(function () {
   }
 });
 
+// Accordion Jquery Widget
+$(document).ready(function() {
+  $("#accordion").accordion();
+});
 
 // BxSlider plugin in home page to slideshow the background images.
 $(document).ready(function () {
