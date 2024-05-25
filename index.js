@@ -123,31 +123,27 @@ $(document).ready(function () {
 });
 
 // Commentization on recipes page.
-$(document).ready(function () {
-  $(".add-comment").click(function () {
-    var commentText = $(this).siblings(".new-comment").val();
-    var commenterName = "Anonymous";
-    if (commentText.trim() !== "") {
-      var $commenterNameInput = $(this).siblings(".commenter-name");
-      if (
-        $commenterNameInput.length &&
-        $commenterNameInput.val().trim() !== ""
-      ) {
-        commenterName = $commenterNameInput.val();
-      }
-
-      var commentHTML =
-        "<div class='comment'><strong>" +
-        commenterName +
-        ":</strong> " +
-        commentText +
-        "</div>";
-      $(this).siblings(".comment-section").append(commentHTML);
-      $(this).siblings(".new-comment").val("");
-      $commenterNameInput.val("");
+$('.add-comment').click(function () {
+  var commentText = $(this).siblings(".new-comment").val();
+  var commenterName = "Anonymous";
+  if (commentText.trim() !== "") {
+    var $commenterNameInput = $(this).siblings(".commenter-name");
+    if ($commenterNameInput.length && $commenterNameInput.val().trim() !== "") {
+      commenterName = $commenterNameInput.val();
     }
-  });
+
+    var commentHTML =
+      "<div class='comment'><strong>" +
+      commenterName +
+      ":</strong> " +
+      commentText +
+      "</div>";
+    $(this).siblings(".comment-section").append(commentHTML);
+    $(this).siblings(".new-comment").val("");
+    $commenterNameInput.val("");
+  }
 });
+
 
 // BxSlider plugin in home page to slideshow the background images.
 $(document).ready(function () {
@@ -197,7 +193,7 @@ $(document).ready(function () {
                       <div class="comment-section"></div>
                       <input type="text" class="commenter-name" placeholder="Your Name">
                       <textarea class="new-comment" placeholder="Add a comment..."></textarea>
-                      <button class="btn" id="comment-button">Add Comment</button>
+                      <button class="btn add-comment">Add Comment</button>
                   </div>
               </div>`;
               recipesContent.append(recipeHtml);
