@@ -636,3 +636,12 @@ button#search-button.btn {
 .unselectable-list:focus {
   outline: none;
 }
+
+/* COMMENTS IN RECIPES.HTML */
+#comment-button {
+  border: none;
+}
+
+input.commenter-name {
+  margin-bottom: 8px;
+}

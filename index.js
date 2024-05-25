@@ -180,32 +180,54 @@ $(document).ready(function() {
 // AJAX FEATURE 1 - Reading recipes texts from .json
 $(document).ready(function () {
   $.ajax({
-    url: 'data/recipes.json',
-    dataType: 'json',
-    success: function (data) {
-      var recipesContent = $('.recipe-details');
-      recipesContent.empty();
-      $.each(data, function (index, recipe) {
-        var recipeHtml = `
-          <div class="recipe">
-            <img src="${recipe.image}" alt="${recipe.title}" class="recipe-image" />
-            <h2>${recipe.title}</h2>
-            <p><strong>Ingredients:</strong> ${recipe.ingredients}</p>
-            <p><strong>Instructions:</strong> ${recipe.instructions}</p>
-            <div class="comments">
-              <h3>Comments</h3>
-              <div class="comment-section"></div>
-              <input type="text" class="commenter-name" placeholder="Your Name">
-              <textarea class="new-comment" placeholder="Add a comment..."></textarea>
-              <button class="add-comment">Add Comment</button>
-            </div>
-          </div>`;
-        recipesContent.append(recipeHtml);
-      });
-    },
-    error: function () {
-      alert('Failed to load recipes.');
-    }
+      url: 'data/recipes.json',
+      dataType: 'json',
+      success: function (data) {
+          var recipesContent = $('.recipe-details');
+          recipesContent.empty();
+          $.each(data, function (index, recipe) {
+              var recipeHtml = `
+              <div class="recipe">
+                  <img src="${recipe.image}" alt="${recipe.title}" class="recipe-image" />
+                  <h2>${recipe.title}</h2>
+                  <p><strong>Ingredients:</strong> ${recipe.ingredients}</p>
+                  <p><strong>Instructions:</strong> ${recipe.instructions}</p>
+                  <div class="comments">
+                      <h3>Comments</h3>
+                      <div class="comment-section"></div>
+                      <input type="text" class="commenter-name" placeholder="Your Name">
+                      <textarea class="new-comment" placeholder="Add a comment..."></textarea>
+                      <button class="btn" id="comment-button">Add Comment</button>
+                  </div>
+              </div>`;
+              recipesContent.append(recipeHtml);
+          });
+
+          // Bind the click event for the add-comment buttons
+          $('.add-comment').click(function () {
+              var commentText = $(this).siblings(".new-comment").val();
+              var commenterName = "Anonymous";
+              if (commentText.trim() !== "") {
+                  var $commenterNameInput = $(this).siblings(".commenter-name");
+                  if ($commenterNameInput.length && $commenterNameInput.val().trim() !== "") {
+                      commenterName = $commenterNameInput.val();
+                  }
+
+                  var commentHTML =
+                      "<div class='comment'><strong>" +
+                      commenterName +
+                      ":</strong> " +
+                      commentText +
+                      "</div>";
+                  $(this).siblings(".comment-section").append(commentHTML);
+                  $(this).siblings(".new-comment").val("");
+                  $commenterNameInput.val("");
+              }
+          });
+      },
+      error: function () {
+          alert('Failed to load recipes.');
+      }
   });
 });
 
