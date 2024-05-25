@@ -652,6 +652,7 @@ input.commenter-name {
   margin: 20px auto;
   border: none;
 }
+
 #accordion h3 {
   background-color: #4caf50;
   color: white;
@@ -670,7 +671,7 @@ input.commenter-name {
   border-top: none;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  margin-bottom: 20px; /* Increased spacing between boxes */
+  margin-bottom: 20px;
 }
 
 .accordion-p {

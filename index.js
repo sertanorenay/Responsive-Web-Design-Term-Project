@@ -50,7 +50,7 @@ $(document).ready(function () {
   });
 });
 
-// Daily random tips
+// Daily random tips for index.html
 $(document).ready(function () {
   var tips = [
     "Drink at least 8 glasses of water each day.",
